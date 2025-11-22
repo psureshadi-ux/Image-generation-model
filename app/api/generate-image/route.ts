@@ -79,7 +79,6 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Send webhook notification
     const webhookUrl = process.env.WEBHOOK_URL;
     if (webhookUrl) {
       try {
